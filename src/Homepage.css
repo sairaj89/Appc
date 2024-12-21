@@ -1,24 +1,24 @@
-header {
-  position: relative; /* Change from absolute to relative to avoid unexpected movement */
-  top: 0.6rem; /* Space from the top edge */
+header { 
+  position: relative; 
+  top: 0.6rem; 
   left: 0px;
   font-size: 18px;
-  text-align: center; /* Centers the text */
-  display: block; /* Ensures the header is block-level */
-  margin: 0 auto; /* Centers the header horizontally */
-  width: fit-content; /* Adjust width to fit the content */
-  border-bottom: 3px solid red; /* Adds red underline */
-  padding-bottom: 0px; /* Adds space between text and the underline */
+  text-align: center; 
+  display: block; 
+  margin: 0 auto; 
+  width: fit-content; 
+  border-bottom: 3px solid red; 
+  padding-bottom: 10px; 
 }
 
 .navbar {
-  margin-top: 2.0rem; /* Adds space below the header */
+  margin-top: 2.0rem; 
 }
 
 .sell-section {
   padding: 20px 20px;
   margin-top: 5px;
-  text-align: left; /* Align the text below the navbar to the left */
+  text-align: left; 
 }
 
 .sell-section h2 {
@@ -34,34 +34,39 @@ header {
 }
 
 .sell-section .button-group {
-  margin-top: 15px; /* Adds space between the text and buttons */
+  margin-top: 0px; 
   display: flex;
-  gap: 10px; /* Adds spacing between the buttons */
+  gap: 10px; 
   margin-left: 4rem;
 }
 
 .sell-section .info-text {
-  margin-top: 60px; /* Adds space between the buttons and the additional text */
-  font-size: 32px; /* Increases the font size for the additional text */
-  line-height: 1.5; /* Improves readability with line height */
+  margin-top: 2rem; 
+  font-size: 34px; 
+  line-height: 1.5; 
+  color: red;
 }
 
 .video-section {
-  display: flex; /* Arrange video and text side by side */
-  align-items: flex-start; /* Align items at the top */
-  margin-top: 4rem; /* Adds space above the section */
+  display: flex; 
+  align-items: flex-start;
+  margin-top: 4rem; 
   margin-left: 3rem;
 }
 
 .video-container {
-  margin-right: 5px; /* Adds space between the video and text */
+  margin-right: 5px; 
 }
 
 .text-container {
-  max-width: 672px; /* Limits the width of the text for readability */
-  font-size: 13px; /* Reduces the font size of the text */
-  line-height: 2.4; /* Adjusts the line height for better spacing */
-  margin-top: 3rem;
+  max-width: 672px; 
+  font-size: 13px; 
+  line-height: 2.4; 
+  margin-top: 7rem;
+}
+
+.text-container p{
+  font-size: 18px;
 }
 
 .info-text {
@@ -69,6 +74,236 @@ header {
 }
 
 .sell-text-container {
-  margin-bottom: 20px; /* Adds space below the text container */
+  margin-bottom: 20px; 
   margin-left: 1rem;
+  line-height: 1;
+  margin-top: 2rem;
 }
+
+.sell-text-container span {
+  position: relative;
+  display: inline-block;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.sell-text-container span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;  
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.sell-text-container span:hover {
+  color: red;
+}
+
+.sell-text-container span:hover::after {
+  width: 100%;
+}
+
+
+.below-video-text {
+  margin-top: 9rem; 
+  font-size: 24px;
+  line-height: 1.0; 
+  text-align: center; 
+  width: 100%;
+}
+
+.below-video-text p {
+  margin-bottom: 6px; 
+  font-size: 38px; 
+  color: red; 
+  display: inline-block; 
+}
+
+
+.below-video-text p:first-child {
+  margin-bottom: 0px; 
+}
+
+
+.connect-text-container {
+  text-align: center; 
+  font-size: 16px; 
+  margin-top: 20px; 
+}
+
+.connect-text-container p {
+  color: black; 
+  font-size: 20px; 
+  color: red;
+}
+
+
+.grow-business-text {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  margin-top: 7rem;
+  font-size: 22px;
+  color: black;
+}
+
+.grow-business-text p{
+  font-size: 37px;
+}
+
+
+
+.custom-storefront h3 {
+  font-size: 33px;
+  margin-bottom: 10px; 
+  font-weight: bold;
+  color: red;
+}
+
+
+.custom-storefront-text p {
+  font-size: 16px;
+  color: #555; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  max-width: 600px; 
+}
+
+
+.custom-tools-section div {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color:red;
+}
+
+
+.custom-tools-section {
+  margin-top: 30px;
+}
+
+
+.sell-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.advertising-tools {
+  text-align: center;
+  margin-top: 30px; 
+}
+
+
+.advertising-tools h3 {
+  font-size: 33px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: red
+}
+
+
+.advertising-tools-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.data-analytics {
+  text-align: center;
+  margin-top: 30px; 
+}
+
+
+.data-analytics h3 {
+  font-size: 33px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: red;
+}
+
+
+.data-analytics-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.customer-support {
+  text-align: center;
+  margin-top: 30px; 
+}
+
+
+.customer-support h3 {
+  font-size: 33px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: red;
+}
+
+
+.customer-support-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success-stories {
+  background-color: #f0f0f0; 
+  width: 100%; 
+  height: 30rem; 
+  display: flex; 
+  justify-content: center; 
+  align-items:start;
+  color: #333; 
+  margin-top: 40px; 
+  box-sizing: border-box; 
+}
+
+.success-stories h3{
+  margin-top: 11rem;
+  font-weight: bold;
+  font-size: 36px;
+  color: red;
+}
+
+.success-stories-text {
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 16px; 
+  color: #333; 
+  line-height: 1.6; 
+}
+
+.success-stories-content{
+  margin-top: 4rem;
+}
+
+.platform-section{
+  margin-top: 3rem;
+}
+
+
+

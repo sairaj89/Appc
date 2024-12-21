@@ -23,7 +23,7 @@
   .navbar .left-links {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Space between the left links and the rest of the navbar */
+    margin-right: 20px; 
   }
   
   .navbar .left-links li {
@@ -43,7 +43,7 @@
   
   .navbar .nav-links {
     display: flex;
-    margin-left: auto; /* Pushes the main navigation links to the right */
+    margin-left: auto;
     margin-right: 2.5rem;
   }
   

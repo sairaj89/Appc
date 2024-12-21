@@ -1,12 +1,12 @@
 import React from 'react';
-import './Navbar.css'; // Importing the CSS file for the Navbar
-import logo from '../images/1c.png'; // Importing the logo from the images folder
+import './Navbar.css'; 
+import logo from '../images/1c.png'; 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo" /> {/* Using the imported logo */}
+        <img src={logo} alt="Logo" /> 
       </div>
       <ul className="left-links">
         <li><a href="#myaccount">My Account</a></li>
