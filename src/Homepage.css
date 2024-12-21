@@ -1,0 +1,74 @@
+header {
+  position: relative; /* Change from absolute to relative to avoid unexpected movement */
+  top: 0.6rem; /* Space from the top edge */
+  left: 0px;
+  font-size: 18px;
+  text-align: center; /* Centers the text */
+  display: block; /* Ensures the header is block-level */
+  margin: 0 auto; /* Centers the header horizontally */
+  width: fit-content; /* Adjust width to fit the content */
+  border-bottom: 3px solid red; /* Adds red underline */
+  padding-bottom: 0px; /* Adds space between text and the underline */
+}
+
+.navbar {
+  margin-top: 2.0rem; /* Adds space below the header */
+}
+
+.sell-section {
+  padding: 20px 20px;
+  margin-top: 5px;
+  text-align: left; /* Align the text below the navbar to the left */
+}
+
+.sell-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+}
+
+.sell-section p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 3rem;
+}
+
+.sell-section .button-group {
+  margin-top: 15px; /* Adds space between the text and buttons */
+  display: flex;
+  gap: 10px; /* Adds spacing between the buttons */
+  margin-left: 4rem;
+}
+
+.sell-section .info-text {
+  margin-top: 60px; /* Adds space between the buttons and the additional text */
+  font-size: 32px; /* Increases the font size for the additional text */
+  line-height: 1.5; /* Improves readability with line height */
+}
+
+.video-section {
+  display: flex; /* Arrange video and text side by side */
+  align-items: flex-start; /* Align items at the top */
+  margin-top: 4rem; /* Adds space above the section */
+  margin-left: 3rem;
+}
+
+.video-container {
+  margin-right: 5px; /* Adds space between the video and text */
+}
+
+.text-container {
+  max-width: 672px; /* Limits the width of the text for readability */
+  font-size: 13px; /* Reduces the font size of the text */
+  line-height: 2.4; /* Adjusts the line height for better spacing */
+  margin-top: 3rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.sell-text-container {
+  margin-bottom: 20px; /* Adds space below the text container */
+  margin-left: 1rem;
+}
